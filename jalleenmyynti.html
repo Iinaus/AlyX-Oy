@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/20926e1a4a.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="images/logo-icon.png">
+        <title>Jälleenmyynti | ÄlyX</title>
+        <meta name="description" content="Puiset pulmapelit löydät ÄlyX Oy kivijalkamyymälästä Helsingistä. Haluatko tuotteemme jälleenmyyjäksi? Ota yhteyttä!">
+    </head>
+<body class="grid-with-aside">
+    <header class="header-flex">
+        <figure>
+            <a href="index.html"><img src="images/logo-nega.png" alt="ÄlyX logo"></a>
+            <figcaption class="offscreen">ÄlyX</figcaption>
+        </figure>
+        <nav class="nav-flex">
+            <a class="nav-item" href="index.html">Etusivu</a>
+            <a class="nav-item" href="tuotteet.html">Tuotteet</a>
+            <a class="nav-item" href="jalleenmyynti.html">Jälleenmyynti</a>
+            <a class="nav-item" href="yhteystiedot.html">Yhteystiedot</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Jälleenmyyjäksi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a accumsan odio. 
+                Nulla pulvinar, elit quis rhoncus blandit, turpis ante tristique risus, ac faucibus. 
+                Donec eget convallis nisi, quis mattis nibh. Donec in nunc libero. 
+                Proin eu magna volutpat, bibendum odio quis, posuere ante. Nam lacinia, 
+                turpis et efficitur dapibus, ante libero elementum ligula.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a accumsan odio. 
+                Nulla pulvinar, elit quis rhoncus blandit, turpis ante tristique risus, ac faucibus. 
+                Donec eget convallis nisi, quis mattis nibh. Donec in nunc libero. 
+                Proin eu magna volutpat, bibendum odio quis, posuere ante. Nam lacinia, 
+                turpis et efficitur dapibus, ante libero elementum ligula.</p>
+            <p id="lomakekehoitus"><strong>Täytä alla oleva lomake ja me olemme teihin yhteydessä!</strong></p>               
+        </section>
+
+        <form id="lomake1">
+            <ul>
+                <li>
+                    <label for="name">Nimi<span class="req">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Nimi" required>
+                </li>
+                <li>
+                    <label for="email">Sähköpostiosoite<span class="req">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Sähköpostiosoite" required>
+                </li>
+                <li>
+                    <label for="phone">Puhelinnumero<span class="req">*</span></label>
+                    <input type="text" id="phone" name="phone" placeholder="Puhelinnumero" required>
+                </li>
+                <li>
+                    <label for="company">Yritys<span class="req">*</span></label>
+                    <input type="text" id="company" name="company" placeholder="Yritys" required>
+                </li>
+                <li>
+                    <label for="subject">Lisätietoja</label>
+                    <textarea id="subject" name="subject"></textarea>
+                </li>
+                <li>
+                    <label><b>Kyllä kiitos, haluan vastaanottaa markkinointiviestejä:</b></label>
+                </li>
+                <li>
+                    <input type="checkbox" class="checkbox" id="emaillupa" name="emaillupa">
+                    <label for="emaillupa">sähköpostitse</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="checkbox" id="smslupa" name="smslupa">
+                    <label for="smslupa">puhelimitse</label>
+                </li>
+                <li class="button">
+                    <button type="submit" onclick="ilmoitus()">Lähetä</button>
+                    <script>
+                        function ilmoitus() {
+                            const elmnt = document.getElementById("lomake1"); elmnt.remove(); 
+                            document.getElementById("lomakekehoitus").innerHTML = "<strong>Kiitos yhteydenotosta!<br>Lomake on lähetetty ja olemme teihin yhteydessä 5 arkipäivän sisällä.</strong>";                        
+                        }
+                    </script>
+                </li>
+            </ul>
+        </form>
+
+    </main>
+
+    <aside>
+        <section>
+            <h3>Jälleenmyyjämme</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a accumsan odio. 
+                Nulla pulvinar, elit quis rhoncus blandit, turpis ante tristique risus, ac faucibus. 
+                Donec eget convallis nisi, quis mattis nibh.</p>
+            <p><strong>Lisätietoja jälleenmyyjistämme saat klikkaamalla nimeä.</strong></p>
+            <details>
+                <summary>ÄlyX kivijalkamyymälä</summary>
+                <p>Pulmatie 100, 00101 Helsinki</p>
+                <a href="yhteystiedot.html">Katso aukioloajat</a>
+            </details>
+            <details>
+                <summary>Pulmaliike, Jyväskylä</summary>
+                <p>Osoite 1, 40100 Jyväskylä</p>
+                <a href="https://fi.wikipedia.org/wiki/Jyv%C3%A4skyl%C3%A4">Katso aukioloajat</a>
+            </details>
+            <details>
+                <summary>Verkkokauppa.com</summary>
+                <a href="https://www.verkkokauppa.com/fi/etusivu">Verkkokauppaan</a><br>
+                <a href="https://www.verkkokauppa.com/fi/yhteystiedot">Myymälöiden yhteystiedot</a>
+            </details>
+        </section>
+        
+    </aside>
+
+    <footer >
+        <figure>
+            <a href="index.html"><img src="images/logo.png" alt="ÄlyX logo"></a>
+            <figcaption class="offscreen">ÄlyX logo</figcaption>
+        </figure>
+        <a href="https://www.facebook.com/VAMKofficial"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com/VAMKofficial/"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/school/vamkofficial/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <p>ÄlyX Oy on kuvitteellinen yritys, joka valmistaa puisia pulmapelejä.</p>
+        <p>Sivusto on toteutettu H2C1101-3003 HTML5 & CSS kurssin lopputyönä.</p>                               
+        <strong><a href="yhteystiedot.html">Yhteystiedot</a></strong>
+    </footer>
+    
+</body>
+</html>
