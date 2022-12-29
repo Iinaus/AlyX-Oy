@@ -1,5 +1,4 @@
-# AlyX-Oy
-Static website for imaginary company called ÄlyX Oy
+# ÄlyX-Oy
 
 ## Table of contents 
   - [About](#about)
