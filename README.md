@@ -2,13 +2,13 @@
 
 ## Table of contents 
   - [About](#about)
-  - [Full assingment](#assingment)
+  - [Full assignment](#assignment)
 
 ## About   
 
-This was the final project for HTML5 & CSS course in Vaasa University of Applied Sciences. The assingment was to create a static website for imaginary company called ÄlyX Oy. You can read the full assingment and criteria [below](#assingment).
+This was the final project for HTML5 & CSS course in Vaasa University of Applied Sciences. The assignment was to create a static website for imaginary company called ÄlyX Oy. You can read the full assignment and criteria [below](#assignment).
 
-## Full assingment
+## Full assignment
 
 ### Subject
 
